@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/jee
+        http://www.springframework.org/schema/jee/spring-jee-4.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<import resource="security-context.xml" />
+	
+    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/project-datasource" />
+	<jee:jndi-lookup id="smtpProperties" jndi-name="smtp" />
+
+	<import resource="service-context.xml" />
+
+	<context:component-scan base-package="com.itacademy.jd2.bs.ta.web.converter" />
+
+</beans>

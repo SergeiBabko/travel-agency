@@ -1,0 +1,1 @@
+TRUNCATE ta_description, news, favorite, booked, review, tour_date, customer, user_account, tour, tour_type, city, country CASCADE;

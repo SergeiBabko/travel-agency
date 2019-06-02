@@ -1,0 +1,58 @@
+/*
+ * Phoca Flags 1.0.0 by Jan Pavelka
+ * Copyright 2013 Jan Pavelka ( http://www.phoca.cz )
+ * License GNU General Public License version 3
+ */
+.phoca-box {
+	width: 32%;
+	float: left;
+	position: relative;
+	height: 140px;
+}
+
+.phoca-flagbox {
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative
+}
+
+.phoca-flag {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.phoca-title {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 40px;
+}
+
+.phoca-flagbg {
+	
+}
+
+.ru {
+	width: 35% !important;
+	background-size: 120% !important;
+	height: 23.3333333 !important;
+	border-style: solid !important;
+	border-radius: 1vh !important;
+	border-color: transparent !important;
+}
+
+.us {
+	width: 35% !important;
+	background-size: 150% !important;
+    height: 23.3333333 !important;
+    border-style: solid !important;
+    border-radius: 1vh !important;
+	border-color: transparent !important;;
+}

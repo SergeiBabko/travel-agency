@@ -1,0 +1,159 @@
+select {
+	display: block;
+	height: 2rem;
+}
+
+label {
+	font-size: .8rem;
+	color: #505050;
+}
+
+thead {
+	cursor: pointer;
+}
+
+td, th, tr {
+	font-size: 10pt;
+}
+
+
+input[type=search]:not(.browser-default) {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #9e9e9e;
+	border-radius: 0;
+	outline: none;
+	height: 2rem;
+	width: 100%;
+	font-size: 14px;
+	margin: 0 0 8px 0;
+	padding: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-transition: border .3s, -webkit-box-shadow .3s;
+	transition: border .3s, -webkit-box-shadow .3s;
+	transition: box-shadow .3s, border .3s;
+	transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+}
+
+td, th {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0;
+}
+
+table.dataTable thead th.ui-state-default, table.dataTable tfoot th.ui-state-default {
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+	padding: 0.5rem 18px;
+	border-top: 0;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	background-color: #26c6da60;
+}
+
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+	border-top: none;
+}
+
+table.dataTable.display tbody tr.odd>.sorting_1, table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {
+	background-color: #26c6da20;
+}
+
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+	background-color: #26c6da20;
+}
+
+table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+	background-color: #26c6da10;
+}
+
+table.dataTable tbody tr {
+	background-color: transparent;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+	margin-left: 0;
+}
+
+.ui-widget-header {
+	border: none;
+	background: #26c6da90;
+	color: #333333;
+	font-weight: bold;
+}
+
+.dataTables_wrapper .ui-toolbar {
+	padding: 1vh 2vh;
+}
+
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+	border-radius: 2vh 2vh 0 0 !important;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-radius: 0 0 2vh 2vh !important;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+	float: right;
+	text-align: right;
+	padding-top: 0;
+}
+
+.dataTables_wrapper .dataTables_info {
+	clear: both;
+	float: left;
+	padding-top: 0.25rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .fg-button {
+	box-sizing: border-box;
+	display: inline-block;
+	min-width: 2em;
+	min-height: 2em;
+	padding: 0.2em;
+	margin-left: 2px;
+	text-align: center;
+	text-decoration: none !important;
+	cursor: pointer;
+	*cursor: hand;
+	border: none;
+}
+
+table.dataTable thead th, table.dataTable tfoot th {
+	font-weight: 500;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td {
+	padding: 0.5vh;
+}
+
+tfoot {
+	display: none;
+}
+
+.ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: none !important;
+	background: white;
+	border-radius: 2vh;
+}
+
+.dataTables_wrapper .dataTables_paginate .fg-button:last-child {
+	border-radius: 2vh;
+}
+
+.dataTables_wrapper .dataTables_paginate .fg-button:first-child {
+	border-radius: 2vh;
+}
+
+table.dataTable.no-footer {
+	border-bottom: none;
+}

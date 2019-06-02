@@ -1,0 +1,749 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background: #edf9fb;
+	overflow: overlay;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+nav {
+	overflow: overlay;
+}
+
+.input-field label.multiselect-label, .input-field label.switch-label {
+	position: absolute;
+	top: -26px;
+	font-size: .8rem;
+}
+
+/*----------------------------------------
+			SIDENAV OPTIONS
+------------------------------------------*/
+.sidenav {
+	background-color: #f4fcfd;
+	width: auto;
+	min-width: 250px;
+}
+
+.sidenav .collapsible-body, .sidenav.fixed .collapsible-body {
+    background-color: #f4fcfd;
+}
+
+/*----------------------------------------
+		MY COLORS AND GRADIENTS
+------------------------------------------*/
+.gradient-45deg-light-blue-cyan {
+	background: #039be5;
+	background: -webkit-linear-gradient(45deg, #039be5 0%, #26c6da 100%);
+	background: linear-gradient(45deg, #039be5 0%, #26c6da 100%);
+}
+
+.gradient-45deg-cyan-light-green {
+    background: #1de9b6;
+    background: -webkit-linear-gradient(45deg, #1de9b6 0%, #69f0ae 100%);
+    background: linear-gradient(45deg, #1de9b6 0%, #69f0ae 100%);
+}
+
+.gradient-45deg-red-red {
+    background: #bf360c;
+    background: -webkit-linear-gradient(45deg, #ef5350 0%, #e57373 100%);
+    background: linear-gradient(45deg, #ef5350 0%, #e57373 100%);
+}
+
+.gradient-45deg-orange-deep-orange {
+    background: #ffe0b2;
+    background: -webkit-linear-gradient(45deg, #ffe0b2 0%, #ffccbc 100%);
+    background: linear-gradient(45deg, #ffe0b2 0%, #ffccbc 100%);
+}
+
+.gradient-45deg-yellow-green {
+    background: #ffff8d;
+    background: -webkit-linear-gradient(45deg, #ffff8d 0%, #B9F6CA 100%);
+    background: linear-gradient(45deg, #ffff8d 0%, #B9F6CA 100%);
+}
+
+.gradient-45deg-deep-purple-purple {
+    background: #f3e5f5;
+	background: -webkit-linear-gradient(45deg, #f3e5f5 0%, #d1c4e9 100%);
+	background: linear-gradient(45deg, #f3e5f5 0%, #d1c4e9 100%);
+}
+
+.gradient-45deg-light-blue-teal {
+    background: #b3e5fc;
+    background: -webkit-linear-gradient(45deg, #b3e5fc 0%, #64ffda 100%);
+    background: linear-gradient(45deg, #b3e5fc 0%, #64ffda 100%);
+}
+
+.gradient-45deg-light-blue-indigo {
+    background: #b3e5fc;
+    background: -webkit-linear-gradient(45deg, #b3e5fc 0%, #9fa8da 100%);
+    background: linear-gradient(45deg, #b3e5fc 0%, #9fa8da 100%);
+}
+
+.my-color {
+	color: #26c6da;
+	background-color: #26c6da;
+}
+
+.pagination li.active {
+    background-color: #26c6da;
+}
+
+.btn-floating:hover {
+    background-color: #80deea;
+}
+
+.datepicker-date-display {
+   	background: #26c6da;
+	background: -webkit-linear-gradient(45deg, #039be5 0%, #26c6da 100%);
+	background: linear-gradient(45deg, #039be5 0%, #26c6da 100%);
+}
+
+.datepicker-cancel, .datepicker-today, .datepicker-done {
+    color: #26c6da;
+    padding: 0 1rem;
+}
+
+blockquote {
+    border-left: 5px solid #26c6da;
+}
+
+/*----------------------------------------
+			ROUND BORDERS
+------------------------------------------*/
+.roundborder {
+	border-radius: 2vh 2vh 2vh 2vh !important;
+}
+
+.roundtopborder {
+	border-radius: 2vh 2vh 0 0 !important;
+}
+
+.roundbottomborder {
+	border-radius: 0 0 2vh 2vh !important;
+}
+
+.roundleftborder {
+	border-radius: 2vh 0 0 2vh !important;
+}
+
+.roundrightborder {
+	border-radius: 0 2vh 2vh 0 !important;
+}
+
+/*----------------------------------------
+			CHECKBOX COLOR STYLE
+------------------------------------------*/
+.switch label input[type=checkbox]:checked ~.lever {
+	background-color: #26c6da;
+}
+
+.switch label input[type=checkbox]:checked ~.lever:before, .switch label input[type=checkbox]:checked
+    ~.lever:after {
+	left: 18px;
+}
+
+.switch label input[type=checkbox]:checked ~.lever:after {
+	background-color: #909090;
+}
+
+[type="checkbox"]:checked:disabled+span:before {
+	border-right: none;
+	border-bottom: none;
+}
+.switch label input[type=checkbox]:checked:disabled ~.lever {
+    background-color: #a0a0a0;
+}
+/*----------------------------------------
+			INPUT COLOR STYLE
+------------------------------------------*/
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #26c6da;
+	box-shadow: 0 1px 0 0 #26c6da;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+	color: #26c6da;
+}
+
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #26c6da;
+    box-shadow: 0 1px 0 0 #26c6da;
+}
+
+.input-field .prefix.active {
+	color: #26c6da;
+}
+
+/*----------------------------------------
+				CARDS STYLE
+------------------------------------------*/
+
+.card .card-action {
+    border-top: 0;
+}
+
+/*----------------------------------------
+				IMAGE MASKS
+------------------------------------------*/
+.darken {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.mask img {
+	opacity: 0.5;
+}
+
+.blur img  {
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.bright img {
+	-webkit-filter: brightness(70%);
+	filter: brightness(70%);
+}
+
+.darkblur img {
+	-webkit-filter: blur(3px) brightness(65%);
+	filter: blur(3px) brightness(65%);
+	overflow: overlay; 
+	margin: -5%;
+	width: 110%;
+}
+
+.usericon {
+	height: 64px; 
+	width: 64px;
+}
+
+.backdropblur {
+	backdrop-filter: blur(15px);
+}
+
+.tourImgBackground  {
+	background-size: cover !important;
+	background-position: center !important; 
+	background-repeat : no-repeat !important;
+	overflow: hidden;
+}
+
+/*----------------------------------------
+				FONT STYLE
+------------------------------------------*/
+.pt10 {
+	font-size: 10pt !important;
+}
+
+.pt11 {
+	font-size: 11pt !important;
+}
+
+.pt12 {
+	font-size: 12pt !important;
+}
+
+.pt14 {
+	font-size: 14pt !important;
+}
+
+.pt16 {
+	font-size: 16pt !important;
+}
+
+.pt18 {
+	font-size: 18pt !important;
+}
+
+.pt20 {
+	font-size: 20pt !important;
+}
+
+.light-shadow {
+	text-shadow: 0px 1px 5px #000000;
+}
+
+/*----------------------------------------
+				CENTER ITEMS
+------------------------------------------*/
+.valign-wrapper-center {
+	display: flex;
+	align-items: center;
+}
+
+.center-div {
+	margin: auto;
+	width: fit-content;
+}
+
+.centerOnPage {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.flexCenterOnPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.centerInDiv {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+/*----------------------------------------
+				MAP STYLE
+------------------------------------------*/
+.dmap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.noPadding.collapsible-body {
+    padding: 0;
+}
+
+/*----------------------------------------
+			COLLAPSIBLE STYLE
+------------------------------------------*/
+.collapsible  {
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 0;
+}
+
+.collapsible-body {
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 0;
+}
+
+.collapsible-body.comments {
+    padding: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+.collapsible.incard  {
+	margin: 0;
+}
+
+.collapsible-header {
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 0;
+}
+
+/*----------------------------------------
+			LOGIN/REGISTER CARD
+------------------------------------------*/
+@media only screen and (max-width: 450px) {
+	.tabs-content.carousel.carousel-slider.logreg {
+		height: 320px !important;
+	}
+}
+
+@media only screen and (min-width: 451px) and (max-width: 601px) {
+	.card.lr {
+		width: 90%;
+		margin: auto;
+		position: relative;
+	}
+	.tabs-content.carousel.carousel-slider.logreg {
+		height: 300px !important;
+	}
+}
+
+@media only screen and (min-width: 602px) and (max-width: 1124px) {
+	.card.lr {
+		width: 50%;
+		margin: auto;
+		position: relative;
+	}
+	.tabs-content.carousel.carousel-slider.logreg {
+		height: 300px !important;
+	}
+}
+
+@media only screen and (min-width: 1125px) {
+	.card.lr {
+		width: 35%;
+		margin: auto;
+		position: relative;
+	}
+	.tabs-content.carousel.carousel-slider.logreg {
+		max-height: 300px !important;
+	}
+}
+
+.tabs .indicator {
+	background-color: #ffffff;
+	height: 100%;
+	opacity: 0.2;
+}
+
+/*----------------------------------------
+			ACTION-BTN DIRECTION
+------------------------------------------*/
+.fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul {
+    right: 48px;
+}
+
+.fixed-action-btn.direction-left ul li, .fixed-action-btn.direction-right ul li {
+	margin: 1% 3% 0 0;
+}
+
+.fixed-action-btn.toolbar.direction-left ul li, .fixed-action-btn.toolbar.direction-right ul li {
+	margin: 0;
+}
+
+.fixed-action-btn.toolbar {
+	height: auto;
+}
+
+.fixed-action-btn.toolbar.toolbarEnabled.direction-left.direction-top.active {
+	width: 110% !important;
+	left: -5% !important;
+	z-index: 0;
+}
+
+.fixed-action-btn.toolbar ul li a {
+	line-height: 32px;
+}
+
+.fixed-action-btn.toolbarEnabled {
+	right: 16;
+	bottom: 16;
+}
+
+.fixed-action-btn.toolbar ul {
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 100%;
+    left: auto;
+    width: 100%;
+    z-index: 1;
+}
+
+/*----------------------------------------
+				SWAL STYLE
+------------------------------------------*/
+.swal-modal  {
+	border-radius: 2vh;
+}
+
+.swal-text {
+	text-align: center;
+}
+
+.swal-button {
+	border-radius: 2vh;
+}
+
+.swal-footer {
+	text-align: center;
+}
+
+
+
+
+.material-tooltip {
+	border-radius: 2vh 2vh 2vh 2vh !important;
+	background-color: #e16151f0;
+}
+
+table, td, th.myTable {
+	border-collapse: unset;
+	padding: 0;
+}
+
+span.badge.new {
+    font-size: 0.9rem;
+}
+
+hr.style1 {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+	color: #26c6da;
+}
+
+.slider .indicators .indicator-item.active {
+	background-color: #26c6da;
+}
+
+/*----------------------------------------
+				MODAL STYLE
+------------------------------------------*/
+.modal {
+	z-index: 10005 !important;
+}
+
+.modal-big.open {
+	max-width: 100%;
+	max-height: 100%;
+	height: 96%;
+	top: 2% !important;
+}
+
+.modal.modal-fixed-footer .modal-footer {
+	border-top: 0px solid rgba(0, 0, 0, 0);
+}
+
+.modal.bottom-sheet.map {
+	max-height: 100%;
+	height: 70%;
+}
+
+@media only screen and (max-width: 992px) {
+	.modal {
+		width: 94%;
+		z-index: 10005 !important;
+	}
+}
+
+.datepicker-modal {
+	z-index: 1003 !important;
+}
+
+/*----------------------------------------
+			<PRE> TEXT STYLE
+------------------------------------------*/
+pre {
+	white-space: pre-wrap
+}
+
+.inner-pre {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+}
+
+/*----------------------------------------
+			SELECT DROPDOWN
+------------------------------------------*/
+.select-wrapper .dropdown-content {
+	top: 0 !important;
+	width: 100%;
+	border-radius: 2vh;
+}
+
+/*----------------------------------------
+			Currency Converter
+------------------------------------------*/
+#bodyby input {
+	margin: 0;
+	height: 2rem;
+	font-weight: 300;
+	font-size: 12pt;
+}
+
+#bodyby table {
+	border-spacing: 0.5rem 0;
+	font-weight: 300;
+}
+
+#bodyby td {
+	text-align: center;
+}
+
+/*----------------------------------------
+				LINK STYLE
+------------------------------------------*/
+.cl-effect-1 a {
+	color: #263238;
+}
+
+.cl-effect-1 a:hover {
+	font-weight: 500;
+}
+
+.cl-effect-1 a::before, .cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+/*----------------------------------------
+			SHOW HIDE
+------------------------------------------*/
+@media only screen and (max-width: 601px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+		display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+		display: none !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .hide-on-med-and-up {
+		display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+		display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .hide-on-large-only {
+		display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .show-on-large {
+		display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+		display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .show-on-small {
+		display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .show-on-medium-and-up {
+		display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .show-on-medium-and-down {
+		display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .center-on-small-only {
+		text-align: center;
+  }
+}
+
+/*----------------------------------------
+			SCROLLBAR STYLE
+------------------------------------------*/
+@media only screen and (min-width: 601px) {
+	::-webkit-scrollbar {
+		width: 7px;
+		height: 0;
+		background: transparent;
+	}
+}
+
+@media only screen and (max-width: 601px) {
+	::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+		background: transparent;
+	}
+}
+
+::-webkit-scrollbar-track {
+	margin: 0 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+:hover::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.3)
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.6)
+}

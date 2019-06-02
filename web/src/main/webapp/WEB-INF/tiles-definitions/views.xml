@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- MAIN Page -->
+
+	<definition name="DefaultTemplate" template="/WEB-INF/views/main-template.jsp">
+		<put-attribute name="title" value="Travel Agency" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<!-- Home Page -->
+
+	<definition name="index" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+
+	<!-- News -->
+
+	<definition name="news.list" extends="DefaultTemplate">
+		<put-attribute name="title" value="News" />
+		<put-attribute name="body" value="/WEB-INF/views/news/news.jsp" />
+	</definition>
+
+	<definition name="news.edit" extends="DefaultTemplate">
+		<put-attribute name="title" value="News edit" />
+		<put-attribute name="body" value="/WEB-INF/views/news/edit.jsp" />
+	</definition>
+
+	<!-- Tour -->
+
+	<definition name="tour.list" extends="DefaultTemplate">
+		<put-attribute name="title" value="Tours" />
+		<put-attribute name="body" value="/WEB-INF/views/tours/tours.jsp" />
+	</definition>
+
+	<definition name="tour.edit" extends="DefaultTemplate">
+		<put-attribute name="title" value="Tour edit" />
+		<put-attribute name="body" value="/WEB-INF/views/tours/edit.jsp" />
+	</definition>
+
+	<definition name="tour.tourpage" extends="DefaultTemplate">
+		<put-attribute name="title" value="/WEB-INF/views/tours/tourname.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/tours/tourpage.jsp" />
+	</definition>
+
+	<!-- Description -->
+
+	<definition name="tadescription.list" extends="DefaultTemplate">
+		<put-attribute name="title" value="Description" />
+		<put-attribute name="body" value="/WEB-INF/views/tadescription/description.jsp" />
+	</definition>
+
+	<definition name="tadescription.edit" extends="DefaultTemplate">
+		<put-attribute name="title" value="Description edit" />
+		<put-attribute name="body" value="/WEB-INF/views/tadescription/edit.jsp" />
+	</definition>
+
+	<!-- Login/Register -->
+
+	<definition name="login" extends="DefaultTemplate">
+		<put-attribute name="title" value="Login/Register" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+
+	<!-- Customer -->
+
+	<definition name="customer.list" extends="DefaultTemplate">
+		<put-attribute name="title" value="/WEB-INF/views/customer/customerName.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/customer/customer.jsp" />
+	</definition>
+
+	<!-- Manager -->
+
+	<definition name="manager.list" extends="DefaultTemplate">
+		<put-attribute name="title" value="/WEB-INF/views/manager/managerName.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/manager/manager.jsp" />
+	</definition>
+
+	<!-- Booked -->
+
+	<definition name="booked" template="/WEB-INF/views/booked/booked.jsp"></definition>
+
+</tiles-definitions>

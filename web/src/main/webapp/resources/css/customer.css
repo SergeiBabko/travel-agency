@@ -1,0 +1,44 @@
+.carousel {
+	height: 100%;
+}
+
+.carousel-item.active {
+	transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px) !important;
+}
+
+.collapsible {
+	overflow: hidden;
+	background-color: white;
+}
+
+.collapsible-header {
+	border-bottom: 1px solid #ddd;
+	border-radius: 0 0 2vh 2vh !important;
+}
+
+.collapsible-body {
+	border-bottom: 1px solid #ddd;
+	border-radius: 0 0 2vh 2vh !important;
+	padding: 0.5vh 2.5vh 0.5vh 2.5vh;
+}
+
+.collection {
+	border: 0;
+}
+
+.keyboard-focused .collapsible-header: focus {
+	background-color: white;
+}
+
+.keyboard-focused .collapsible .collection: focus {
+	background-color: transparent;
+}
+
+.collapsible li.active {
+	background-color: #ebfffa;
+	border-radius: 0 0 2vh 2vh !important;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+	background-color: #b2ebf2;
+}

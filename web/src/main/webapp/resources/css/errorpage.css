@@ -1,0 +1,116 @@
+html, body {
+	height: 100%;
+	background: #edf9fb;
+}
+
+html {
+	display: table;
+	margin: auto;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.text-long-shadow {
+	background-color: #26c6da;
+	width: 100%;
+	font-size: 10rem;
+	color: #fff !important;
+	text-align: center;
+	padding: 20px 0 !important;
+	text-shadow: rgb(30, 158, 174) 1px 1px 0px, rgb(30, 158, 174) 2px 2px 0px, rgb(30, 158, 174) 3px 3px 0px, rgb(30, 158, 174) 4px 4px 0px, rgb(30, 158, 174) 5px 5px 0px, rgb(30, 158, 174) 6px 6px 0px,
+		rgb(30, 158, 174) 7px 7px 0px, rgb(30, 158, 174) 8px 8px 0px, rgb(30, 158, 174) 9px 9px 0px, rgb(30, 158, 174) 10px 10px 0px;
+}
+
+.mt-3 {
+	margin-top: 3% !important;
+}
+
+#site-layout-example-right {
+	background-color: #26c6da;
+	height: 320px;
+}
+
+#site-layout-example-top {
+	background-color: #e16151;
+	height: 60px;
+}
+
+.caption-uppercase {
+	font-size: 1.25rem;
+	font-weight: 300;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.browser-window {
+	text-align: left;
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	-webkit-border-radius: 2vh 2vh 2vh 2vh !important;
+	-moz-border-radius: 2vh 2vh 2vh 2vh !important;
+	border-radius: 2vh 2vh 2vh 2vh !important;
+	background-clip: padding-box;
+	background-color: transparent;
+	margin: 20px 0;
+	overflow: hidden;
+	cursor: pointer;
+	webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.browser-window .circles {
+	margin: 5px 12px;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+#close-circle {
+	background-color: #ff5c5a;
+}
+
+#minimize-circle {
+	background-color: #fdb45c;
+}
+
+#maximize-circle {
+	background-color: #1bc656;
+}
+
+.browser-window .circle {
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background-color: #fff;
+	margin-right: 1px;
+}
+
+.browser-window .top-bar {
+	height: 30px;
+	border-radius: 2vh 2vh 0 0 !important;
+	background-clip: padding-box;
+	border-top: thin solid #eaeae9;
+	border-bottom: thin solid #ddd;
+	background: linear-gradient(#e7e7e6, #e0e0e0);
+}
+
+.browser-window .content {
+	margin: 0;
+	width: 100%;
+	display: inline-block;
+	border-radius: 0 0 2vh 2vh !important;
+	background-color: #fafafa;
+	overflow: hidden;
+}
+
+.browser-window .row {
+	margin: 0;
+}
