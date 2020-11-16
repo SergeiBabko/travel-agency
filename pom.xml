@@ -12,7 +12,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>5.0.0.RELEASE</spring.version>
-		<jetty9.version>9.2.15.v20160210</jetty9.version>
+		<jetty9.version>9.4.34.v20201102</jetty9.version>
 		<jstl.version>1.2.1</jstl.version>
 		<tld.version>1.1.2</tld.version>
 		<servlets.version>3.1.0</servlets.version>
